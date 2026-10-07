@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Struktur Kelas</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#68738a;--accent:#4f46e5;--line:#e6eaf2}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+main{max-width:980px;margin:auto;padding:32px 18px 48px}
+.hero{text-align:center;padding:34px 16px 24px}
+.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#e9e7ff;color:#4038a8;font-size:13px;font-weight:700}
+h1{margin:14px 0 8px;font-size:clamp(30px,6vw,48px)}
+.subtitle{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 8px 25px rgba(20,30,60,.06)}
+.card.leader{border-color:#c8c4ff}
+.icon{width:52px;height:52px;border-radius:16px;background:#eeedff;display:grid;place-items:center;font-size:24px;margin-bottom:14px}
+.role{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:800}
+.name{font-size:20px;font-weight:800;margin-top:5px}
+.note{color:var(--muted);font-size:14px;margin-top:5px}
+.members{margin-top:18px}.members h2{font-size:22px}
+.member-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.member{padding:13px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
+@media(prefers-color-scheme:dark){:root{--bg:#10131b;--card:#181d27;--text:#f3f5fa;--muted:#a5afc0;--accent:#9b96ff;--line:#2a3240}.badge,.icon{background:#292651;color:#c8c4ff}.card{box-shadow:none}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<span class="badge">TAHUN AJARAN 2026 / 2027</span>
+<h1>Struktur Kelas</h1>
+<p class="subtitle">Kelas XI — Nama Sekolah</p>
+</section>
+
+<section class="grid">
+<article class="card leader"><div class="icon">👩‍🏫</div><div class="role">Wali Kelas</div><div class="name">Nama Wali Kelas</div><div class="note">Pembimbing kelas</div></article>
+<article class="card leader"><div class="icon">👑</div><div class="role">Ketua Kelas</div><div class="name">Nama Ketua</div><div class="note">Koordinator kelas</div></article>
+<article class="card"><div class="icon">⭐</div><div class="role">Wakil Ketua</div><div class="name">Nama Wakil</div><div class="note">Mendampingi ketua</div></article>
+<article class="card"><div class="icon">📝</div><div class="role">Sekretaris</div><div class="name">Nama Sekretaris</div><div class="note">Administrasi kelas</div></article>
+<article class="card"><div class="icon">💰</div><div class="role">Bendahara</div><div class="name">Nama Bendahara</div><div class="note">Keuangan kelas</div></article>
+</section>
+
+<section class="members">
+<h2>Anggota Kelas</h2>
+<div class="member-list">
+<div class="member">01. Nama Siswa</div><div class="member">02. Nama Siswa</div>
+<div class="member">03. Nama Siswa</div><div class="member">04. Nama Siswa</div>
+<div class="member">05. Nama Siswa</div><div class="member">06. Nama Siswa</div>
+<div class="member">07. Nama Siswa</div><div class="member">08. Nama Siswa</div>
+<div class="member">09. Nama Siswa</div><div class="member">10. Nama Siswa</div>
+</div>
+</section>
+<footer>© 2026 • Struktur Kelas</footer>
+</main>
+</body>
+</html>
